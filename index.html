@@ -124,18 +124,30 @@ function show(x){
  let b=document.getElementById("box");
  if(x=="photo")b.innerHTML="Your photo goes here 💑";
  if(x=="voice")b.innerHTML="Add voice message later 🎧";
- if(x=="letter")b.innerHTML="My Devyani ❤️,
-Today wasn’t easy for us. Some words came out wrong, some moments felt heavy, and I know I may have hurt you. If I did, I’m truly sorry. Not just because we fought — but because your feelings matter to me more than anything.
-Even in that fight, one thing never changed: my love for you.
-What we did today means a lot to me. We didn’t walk away, we didn’t give up — we talked, we understood, and we fixed things. That’s something real.
+ if(x=="letter") b.innerHTML = `
+<h3>My Devyani ❤️</h3>
+<p>
+Today wasn’t easy for us. Some words came out wrong, some moments felt heavy.
+But even in that fight, one thing never changed — my love for you.
+<br><br>
+What we did today means a lot to me. We didn’t walk away, we didn’t give up.
+We chose to talk, to understand, to stay.
+<br><br>
 You are not someone I love only when everything is perfect.
 I love you on difficult days too.
+<br><br>
 I love you even when we argue — because I still choose you.
-I promise I’ll try to be better with my words, calmer with my reactions, and more careful with your heart. Not because I’m perfect, but because you are worth every effort.
+<br><br>
+I promise I’ll try to be better with my words, calmer with my reactions,
+and more careful with your heart.
+<br><br>
 Thank you for staying.
 Thank you for understanding.
 Thank you for being you.
-I choose you — today, tomorrow, and always ❤️ ";
+<br><br>
+I choose you — today, tomorrow, and always ❤️
+</p>
+`;
  if(x=="promise")b.innerHTML="I promise to never leave your side 🤞";
 }
 
