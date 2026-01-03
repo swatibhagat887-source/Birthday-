@@ -97,20 +97,22 @@ button{
 
 <script>
  window.onload = () => {
-// COUNTDOWN 30s
- const p1 = document.getElementById("p1");
+// COUNTDOWN 30s 
+  const timerEl = document.getElementById("timer");
+const p1 = document.getElementById("p1");
 const p2 = document.getElementById("p2");
-const p3 = document.getElementById("p3");
-let t=30;
-let timer=setInterval(()=>{
- document.getElementById("timer").innerText = "Cake cutting in " + t + "s 🎂";
- t--;
- if(t<0){
-  clearInterval(timer);
-  p1.classList.add("hidden");
-  p2.classList.remove("hidden");
- }
-},1000);
+
+let t = 30;
+
+setInterval(() => {
+  timerEl.innerHTML = "Cake cutting in " + t + "s 🎂";
+  t--;
+
+  if (t < 0) {
+    p1.classList.add("hidden");
+    p2.classList.remove("hidden");
+  }
+}, 1000);
   };
 
 function openTabs(){
